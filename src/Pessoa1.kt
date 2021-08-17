@@ -1,9 +1,7 @@
-package src
-
-class Pessoa {
+class Pessoa1 {
     var nome: String = "Vitor"
     var cpf: String = "111.111.111-20"
-    private set
+        private set
 
     constructor()
 
@@ -11,7 +9,7 @@ class Pessoa {
 }
 
 fun main() {
-    val vitor = src.Pessoa()
+    val vitor = Pessoa1()
 
     println(vitor.pessoainfo())
 
