@@ -1,6 +1,6 @@
 package src
 
-class teste {
+class Pessoa {
     var nome: String = "Vitor"
     var cpf: String = "111.111.111-20"
     private set
@@ -11,7 +11,7 @@ class teste {
 }
 
 fun main() {
-    val vitor = teste()
+    val vitor = Pessoa()
 
     println(vitor.pessoainfo())
 
