@@ -1,5 +1,7 @@
 package src
 
 abstract class Pessoa
-     ( val nome: String,
-      val cpf: String)
+     (open val nome: String,
+     open val cpf: String) {
+
+}

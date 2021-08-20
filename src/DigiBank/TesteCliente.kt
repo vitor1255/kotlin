@@ -1,16 +1,17 @@
 package src.DigiBank
 
+import src.Cliente
 import src.ClienteTipo
 
 fun main() {
-    ClienteTipo.values().forEach {
-        println("${it.name} - ${it.descricao}")
-    }
+    val tete = Cliente(
+        "Teves da Silva",
+        "151.645.332-25",
+        clienteTipo =  ClienteTipo.PF,
+        senha = "123456"
+    )
 
-    val pf = ClienteTipo.PF
-    println(">> ${pf.name} é ${pf.descricao}")
+    println(tete)
 
-    val pj = ClienteTipo.PJ
-    println(">> ${pj.name} é ${pj.descricao}")
+    TesteAutenticacao().autentica(tete)
 }
-
