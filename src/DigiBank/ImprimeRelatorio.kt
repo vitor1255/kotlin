@@ -4,9 +4,9 @@ import src.Funcionario
 
 class ImprimeRelatorio {
     companion object{
-        fun imprime(functionaries: Funcionario) {
+        fun imprime(funcionario: Funcionario) {
             println(
-                functionaries.toString()
+                funcionario.toString()
             )
         }
     }

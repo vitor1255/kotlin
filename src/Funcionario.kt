@@ -1,11 +1,10 @@
 package src
 
-import java.math.BigDecimal
 
 abstract class Funcionario(
-    nome: String.Companion,
-    cpf: String.Companion,
-    val salary: Double.Companion
+    nome: String,
+    cpf: String,
+    val salary: Double
 ) : Pessoa(nome, cpf) {
     protected abstract fun calculoAuxilio(): Double;
 
