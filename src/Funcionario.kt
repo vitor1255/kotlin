@@ -3,9 +3,16 @@ package src
 import java.math.BigDecimal
 
 abstract class Funcionario(
-      nome: String,
-      cpf: String,
-    val salary: BigDecimal
+    nome: String.Companion,
+    cpf: String.Companion,
+    val salary: Double.Companion
 ) : Pessoa(nome, cpf) {
-    abstract fun calculoAuxilio();
+    protected abstract fun calculoAuxilio(): Double;
+
+    override fun toString(): String = """
+        Nome: $nome
+        Cpf: $cpf
+        Salario: $salary
+        Auxilio: ${calculoAuxilio()}
+            """.trimIndent()
 }
